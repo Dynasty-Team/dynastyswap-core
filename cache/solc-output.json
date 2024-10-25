@@ -313,8 +313,8 @@
         }
       }
     },
-    "contracts/PancakeERC20.sol": {
-      "PancakeERC20": {
+    "contracts/DynastyERC20.sol": {
+      "DynastyERC20": {
         "abi": [
           {
             "inputs": [],
@@ -690,8 +690,8 @@
         }
       }
     },
-    "contracts/PancakePair.sol": {
-      "PancakePair": {
+    "contracts/DynastyPair.sol": {
+      "DynastyPair": {
         "abi": [
           {
             "inputs": [],
@@ -1721,8 +1721,8 @@
         }
       }
     },
-    "contracts/interfaces/IPancakeCallee.sol": {
-      "IPancakeCallee": {
+    "contracts/interfaces/IDynastyCallee.sol": {
+      "IDynastyCallee": {
         "abi": [
           {
             "constant": false,
@@ -1748,7 +1748,7 @@
                 "type": "bytes"
               }
             ],
-            "name": "pancakeCall",
+            "name": "dynastyCall",
             "outputs": [],
             "payable": false,
             "stateMutability": "nonpayable",
@@ -1769,13 +1769,13 @@
             "sourceMap": ""
           },
           "methodIdentifiers": {
-            "pancakeCall(address,uint256,uint256,bytes)": "84800812"
+            "dynastyCall(address,uint256,uint256,bytes)": "84800812"
           }
         }
       }
     },
-    "contracts/interfaces/IPancakeERC20.sol": {
-      "IPancakeERC20": {
+    "contracts/interfaces/IDynastyERC20.sol": {
+      "IDynastyERC20": {
         "abi": [
           {
             "anonymous": false,
@@ -2145,8 +2145,8 @@
         }
       }
     },
-    "contracts/interfaces/IPancakeFactory.sol": {
-      "IPancakeFactory": {
+    "contracts/interfaces/IDynastyFactory.sol": {
+      "IDynastyFactory": {
         "abi": [
           {
             "anonymous": false,
@@ -2354,8 +2354,8 @@
         }
       }
     },
-    "contracts/interfaces/IPancakePair.sol": {
-      "IPancakePair": {
+    "contracts/interfaces/IDynastyPair.sol": {
+      "IDynastyPair": {
         "abi": [
           {
             "anonymous": false,
@@ -3576,8 +3576,8 @@
             "src": "0:24:0"
           },
           {
-            "absolutePath": "contracts/interfaces/IPancakeFactory.sol",
-            "file": "./interfaces/IPancakeFactory.sol",
+            "absolutePath": "contracts/interfaces/IDynastyFactory.sol",
+            "file": "./interfaces/IDynastyFactory.sol",
             "id": 2,
             "nodeType": "ImportDirective",
             "scope": 206,
@@ -3587,8 +3587,8 @@
             "unitAlias": ""
           },
           {
-            "absolutePath": "contracts/PancakePair.sol",
-            "file": "./PancakePair.sol",
+            "absolutePath": "contracts/DynastyPair.sol",
+            "file": "./DynastyPair.sol",
             "id": 3,
             "nodeType": "ImportDirective",
             "scope": 206,
@@ -3604,13 +3604,13 @@
                 "baseName": {
                   "contractScope": null,
                   "id": 4,
-                  "name": "IPancakeFactory",
+                  "name": "IDynastyFactory",
                   "nodeType": "UserDefinedTypeName",
                   "referencedDeclaration": 1947,
                   "src": "123:15:0",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IPancakeFactory_$1947",
-                    "typeString": "contract IPancakeFactory"
+                    "typeIdentifier": "t_contract$_IDynastyFactory_$1947",
+                    "typeString": "contract IDynastyFactory"
                   }
                 },
                 "id": 5,
@@ -3670,22 +3670,22 @@
                               {
                                 "argumentTypes": null,
                                 "id": 11,
-                                "name": "PancakePair",
+                                "name": "DynastyPair",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 1668,
                                 "src": "223:11:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_PancakePair_$1668_$",
-                                  "typeString": "type(contract PancakePair)"
+                                  "typeIdentifier": "t_type$_t_contract$_DynastyPair_$1668_$",
+                                  "typeString": "type(contract DynastyPair)"
                                 }
                               }
                             ],
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_type$_t_contract$_PancakePair_$1668_$",
-                                  "typeString": "type(contract PancakePair)"
+                                  "typeIdentifier": "t_type$_t_contract$_DynastyPair_$1668_$",
+                                  "typeString": "type(contract DynastyPair)"
                                 }
                               ],
                               "id": 10,
@@ -3709,8 +3709,8 @@
                             "nodeType": "FunctionCall",
                             "src": "218:17:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_magic_meta_type_t_contract$_PancakePair_$1668",
-                              "typeString": "type(contract PancakePair)"
+                              "typeIdentifier": "t_magic_meta_type_t_contract$_DynastyPair_$1668",
+                              "typeString": "type(contract DynastyPair)"
                             }
                           },
                           "id": 13,
@@ -4364,9 +4364,9 @@
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_6b6c0fd57ca40f45b9eb032cadde29fea9ed443f1cc7381dbf76bda5108517dd",
-                              "typeString": "literal_string \"Pancake: IDENTICAL_ADDRESSES\""
+                              "typeString": "literal_string \"Dynasty: IDENTICAL_ADDRESSES\""
                             },
-                            "value": "Pancake: IDENTICAL_ADDRESSES"
+                            "value": "Dynasty: IDENTICAL_ADDRESSES"
                           }
                         ],
                         "expression": {
@@ -4377,7 +4377,7 @@
                             },
                             {
                               "typeIdentifier": "t_stringliteral_6b6c0fd57ca40f45b9eb032cadde29fea9ed443f1cc7381dbf76bda5108517dd",
-                              "typeString": "literal_string \"Pancake: IDENTICAL_ADDRESSES\""
+                              "typeString": "literal_string \"Dynasty: IDENTICAL_ADDRESSES\""
                             }
                           ],
                           "id": 67,
@@ -4728,9 +4728,9 @@
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_c5956e0f60472441c634ce9db9807068cd7cfa9886ba18d7b55923b5fbff5033",
-                              "typeString": "literal_string \"Pancake: ZERO_ADDRESS\""
+                              "typeString": "literal_string \"Dynasty: ZERO_ADDRESS\""
                             },
-                            "value": "Pancake: ZERO_ADDRESS"
+                            "value": "Dynasty: ZERO_ADDRESS"
                           }
                         ],
                         "expression": {
@@ -4741,7 +4741,7 @@
                             },
                             {
                               "typeIdentifier": "t_stringliteral_c5956e0f60472441c634ce9db9807068cd7cfa9886ba18d7b55923b5fbff5033",
-                              "typeString": "literal_string \"Pancake: ZERO_ADDRESS\""
+                              "typeString": "literal_string \"Dynasty: ZERO_ADDRESS\""
                             }
                           ],
                           "id": 89,
@@ -4936,9 +4936,9 @@
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_6eaf63845c7aa564989ac8d330a685da213b02ed1b55327b64f064785799e8ff",
-                              "typeString": "literal_string \"Pancake: PAIR_EXISTS\""
+                              "typeString": "literal_string \"Dynasty: PAIR_EXISTS\""
                             },
-                            "value": "Pancake: PAIR_EXISTS"
+                            "value": "Dynasty: PAIR_EXISTS"
                           }
                         ],
                         "expression": {
@@ -4949,7 +4949,7 @@
                             },
                             {
                               "typeIdentifier": "t_stringliteral_6eaf63845c7aa564989ac8d330a685da213b02ed1b55327b64f064785799e8ff",
-                              "typeString": "literal_string \"Pancake: PAIR_EXISTS\""
+                              "typeString": "literal_string \"Dynasty: PAIR_EXISTS\""
                             }
                           ],
                           "id": 98,
@@ -5025,22 +5025,22 @@
                             {
                               "argumentTypes": null,
                               "id": 114,
-                              "name": "PancakePair",
+                              "name": "DynastyPair",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 1668,
                               "src": "1160:11:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_PancakePair_$1668_$",
-                                "typeString": "type(contract PancakePair)"
+                                "typeIdentifier": "t_type$_t_contract$_DynastyPair_$1668_$",
+                                "typeString": "type(contract DynastyPair)"
                               }
                             }
                           ],
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_type$_t_contract$_PancakePair_$1668_$",
-                                "typeString": "type(contract PancakePair)"
+                                "typeIdentifier": "t_type$_t_contract$_DynastyPair_$1668_$",
+                                "typeString": "type(contract DynastyPair)"
                               }
                             ],
                             "id": 113,
@@ -5064,8 +5064,8 @@
                           "nodeType": "FunctionCall",
                           "src": "1155:17:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_magic_meta_type_t_contract$_PancakePair_$1668",
-                            "typeString": "type(contract PancakePair)"
+                            "typeIdentifier": "t_magic_meta_type_t_contract$_DynastyPair_$1668",
+                            "typeString": "type(contract DynastyPair)"
                           }
                         },
                         "id": 116,
@@ -5350,14 +5350,14 @@
                                 }
                               ],
                               "id": 129,
-                              "name": "IPancakePair",
+                              "name": "IDynastyPair",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 2189,
                               "src": "1365:12:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_IPancakePair_$2189_$",
-                                "typeString": "type(contract IPancakePair)"
+                                "typeIdentifier": "t_type$_t_contract$_IDynastyPair_$2189_$",
+                                "typeString": "type(contract IDynastyPair)"
                               }
                             },
                             "id": 131,
@@ -5370,8 +5370,8 @@
                             "nodeType": "FunctionCall",
                             "src": "1365:18:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IPancakePair_$2189",
-                              "typeString": "contract IPancakePair"
+                              "typeIdentifier": "t_contract$_IDynastyPair_$2189",
+                              "typeString": "contract IDynastyPair"
                             }
                           },
                           "id": 132,
@@ -5994,9 +5994,9 @@
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_f0c1e1712466d3d36724e0a82edec721666e68b8fe9433d191f13e7c47aec611",
-                              "typeString": "literal_string \"Pancake: FORBIDDEN\""
+                              "typeString": "literal_string \"Dynasty: FORBIDDEN\""
                             },
-                            "value": "Pancake: FORBIDDEN"
+                            "value": "Dynasty: FORBIDDEN"
                           }
                         ],
                         "expression": {
@@ -6007,7 +6007,7 @@
                             },
                             {
                               "typeIdentifier": "t_stringliteral_f0c1e1712466d3d36724e0a82edec721666e68b8fe9433d191f13e7c47aec611",
-                              "typeString": "literal_string \"Pancake: FORBIDDEN\""
+                              "typeString": "literal_string \"Dynasty: FORBIDDEN\""
                             }
                           ],
                           "id": 173,
@@ -6228,9 +6228,9 @@
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_f0c1e1712466d3d36724e0a82edec721666e68b8fe9433d191f13e7c47aec611",
-                              "typeString": "literal_string \"Pancake: FORBIDDEN\""
+                              "typeString": "literal_string \"Dynasty: FORBIDDEN\""
                             },
-                            "value": "Pancake: FORBIDDEN"
+                            "value": "Dynasty: FORBIDDEN"
                           }
                         ],
                         "expression": {
@@ -6241,7 +6241,7 @@
                             },
                             {
                               "typeIdentifier": "t_stringliteral_f0c1e1712466d3d36724e0a82edec721666e68b8fe9433d191f13e7c47aec611",
-                              "typeString": "literal_string \"Pancake: FORBIDDEN\""
+                              "typeString": "literal_string \"Dynasty: FORBIDDEN\""
                             }
                           ],
                           "id": 191,
@@ -6800,11 +6800,11 @@
       },
       "id": 1
     },
-    "contracts/PancakeERC20.sol": {
+    "contracts/DynastyERC20.sol": {
       "ast": {
-        "absolutePath": "contracts/PancakeERC20.sol",
+        "absolutePath": "contracts/DynastyERC20.sol",
         "exportedSymbols": {
-          "PancakeERC20": [
+          "DynastyERC20": [
             627
           ]
         },
@@ -6823,8 +6823,8 @@
             "src": "0:24:2"
           },
           {
-            "absolutePath": "contracts/interfaces/IPancakeERC20.sol",
-            "file": "./interfaces/IPancakeERC20.sol",
+            "absolutePath": "contracts/interfaces/IDynastyERC20.sol",
+            "file": "./interfaces/IDynastyERC20.sol",
             "id": 245,
             "nodeType": "ImportDirective",
             "scope": 628,
@@ -6851,13 +6851,13 @@
                 "baseName": {
                   "contractScope": null,
                   "id": 247,
-                  "name": "IPancakeERC20",
+                  "name": "IDynastyERC20",
                   "nodeType": "UserDefinedTypeName",
                   "referencedDeclaration": 1884,
                   "src": "128:13:2",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IPancakeERC20_$1884",
-                    "typeString": "contract IPancakeERC20"
+                    "typeIdentifier": "t_contract$_IDynastyERC20_$1884",
+                    "typeString": "contract IDynastyERC20"
                   }
                 },
                 "id": 248,
@@ -6876,7 +6876,7 @@
               627,
               1884
             ],
-            "name": "PancakeERC20",
+            "name": "DynastyERC20",
             "nodeType": "ContractDefinition",
             "nodes": [
               {
@@ -7827,16 +7827,16 @@
                                       "referencedDeclaration": 2437,
                                       "src": "1322:4:2",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_contract$_PancakeERC20_$627",
-                                        "typeString": "contract PancakeERC20"
+                                        "typeIdentifier": "t_contract$_DynastyERC20_$627",
+                                        "typeString": "contract DynastyERC20"
                                       }
                                     }
                                   ],
                                   "expression": {
                                     "argumentTypes": [
                                       {
-                                        "typeIdentifier": "t_contract$_PancakeERC20_$627",
-                                        "typeString": "contract PancakeERC20"
+                                        "typeIdentifier": "t_contract$_DynastyERC20_$627",
+                                        "typeString": "contract DynastyERC20"
                                       }
                                     ],
                                     "id": 322,
@@ -11000,9 +11000,9 @@
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_c94fedce6c17cde8c2120d29d390f27d6964b7aed2ab712d624019c41a3810c1",
-                              "typeString": "literal_string \"Pancake: EXPIRED\""
+                              "typeString": "literal_string \"Dynasty: EXPIRED\""
                             },
-                            "value": "Pancake: EXPIRED"
+                            "value": "Dynasty: EXPIRED"
                           }
                         ],
                         "expression": {
@@ -11013,7 +11013,7 @@
                             },
                             {
                               "typeIdentifier": "t_stringliteral_c94fedce6c17cde8c2120d29d390f27d6964b7aed2ab712d624019c41a3810c1",
-                              "typeString": "literal_string \"Pancake: EXPIRED\""
+                              "typeString": "literal_string \"Dynasty: EXPIRED\""
                             }
                           ],
                           "id": 565,
@@ -11747,9 +11747,9 @@
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_861fe3f25593eb07d57a38fb1b6b0f761f16eb1611a0df03954a734d69fb97bf",
-                              "typeString": "literal_string \"Pancake: INVALID_SIGNATURE\""
+                              "typeString": "literal_string \"Dynasty: INVALID_SIGNATURE\""
                             },
-                            "value": "Pancake: INVALID_SIGNATURE"
+                            "value": "Dynasty: INVALID_SIGNATURE"
                           }
                         ],
                         "expression": {
@@ -11760,7 +11760,7 @@
                             },
                             {
                               "typeIdentifier": "t_stringliteral_861fe3f25593eb07d57a38fb1b6b0f761f16eb1611a0df03954a734d69fb97bf",
-                              "typeString": "literal_string \"Pancake: INVALID_SIGNATURE\""
+                              "typeString": "literal_string \"Dynasty: INVALID_SIGNATURE\""
                             }
                           ],
                           "id": 606,
@@ -12104,11 +12104,11 @@
       },
       "id": 2
     },
-    "contracts/PancakePair.sol": {
+    "contracts/DynastyPair.sol": {
       "ast": {
-        "absolutePath": "contracts/PancakePair.sol",
+        "absolutePath": "contracts/DynastyPair.sol",
         "exportedSymbols": {
-          "PancakePair": [
+          "DynastyPair": [
             1668
           ]
         },
@@ -12127,8 +12127,8 @@
             "src": "0:24:3"
           },
           {
-            "absolutePath": "contracts/interfaces/IPancakePair.sol",
-            "file": "./interfaces/IPancakePair.sol",
+            "absolutePath": "contracts/interfaces/IDynastyPair.sol",
+            "file": "./interfaces/IDynastyPair.sol",
             "id": 630,
             "nodeType": "ImportDirective",
             "scope": 1669,
@@ -12138,8 +12138,8 @@
             "unitAlias": ""
           },
           {
-            "absolutePath": "contracts/PancakeERC20.sol",
-            "file": "./PancakeERC20.sol",
+            "absolutePath": "contracts/DynastyERC20.sol",
+            "file": "./DynastyERC20.sol",
             "id": 631,
             "nodeType": "ImportDirective",
             "scope": 1669,
@@ -12182,8 +12182,8 @@
             "unitAlias": ""
           },
           {
-            "absolutePath": "contracts/interfaces/IPancakeFactory.sol",
-            "file": "./interfaces/IPancakeFactory.sol",
+            "absolutePath": "contracts/interfaces/IDynastyFactory.sol",
+            "file": "./interfaces/IDynastyFactory.sol",
             "id": 635,
             "nodeType": "ImportDirective",
             "scope": 1669,
@@ -12193,8 +12193,8 @@
             "unitAlias": ""
           },
           {
-            "absolutePath": "contracts/interfaces/IPancakeCallee.sol",
-            "file": "./interfaces/IPancakeCallee.sol",
+            "absolutePath": "contracts/interfaces/IDynastyCallee.sol",
+            "file": "./interfaces/IDynastyCallee.sol",
             "id": 636,
             "nodeType": "ImportDirective",
             "scope": 1669,
@@ -12210,13 +12210,13 @@
                 "baseName": {
                   "contractScope": null,
                   "id": 637,
-                  "name": "IPancakePair",
+                  "name": "IDynastyPair",
                   "nodeType": "UserDefinedTypeName",
                   "referencedDeclaration": 2189,
                   "src": "306:12:3",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IPancakePair_$2189",
-                    "typeString": "contract IPancakePair"
+                    "typeIdentifier": "t_contract$_IDynastyPair_$2189",
+                    "typeString": "contract IDynastyPair"
                   }
                 },
                 "id": 638,
@@ -12228,13 +12228,13 @@
                 "baseName": {
                   "contractScope": null,
                   "id": 639,
-                  "name": "PancakeERC20",
+                  "name": "DynastyERC20",
                   "nodeType": "UserDefinedTypeName",
                   "referencedDeclaration": 627,
                   "src": "320:12:3",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_PancakeERC20_$627",
-                    "typeString": "contract PancakeERC20"
+                    "typeIdentifier": "t_contract$_DynastyERC20_$627",
+                    "typeString": "contract DynastyERC20"
                   }
                 },
                 "id": 640,
@@ -12257,7 +12257,7 @@
               1884,
               2189
             ],
-            "name": "PancakePair",
+            "name": "DynastyPair",
             "nodeType": "ContractDefinition",
             "nodes": [
               {
@@ -12903,9 +12903,9 @@
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_c084a590425edfe86a11f73831c0243820669c7e4ae4ddc8e665ae7ef10c474a",
-                              "typeString": "literal_string \"Pancake: LOCKED\""
+                              "typeString": "literal_string \"Dynasty: LOCKED\""
                             },
-                            "value": "Pancake: LOCKED"
+                            "value": "Dynasty: LOCKED"
                           }
                         ],
                         "expression": {
@@ -12916,7 +12916,7 @@
                             },
                             {
                               "typeIdentifier": "t_stringliteral_c084a590425edfe86a11f73831c0243820669c7e4ae4ddc8e665ae7ef10c474a",
-                              "typeString": "literal_string \"Pancake: LOCKED\""
+                              "typeString": "literal_string \"Dynasty: LOCKED\""
                             }
                           ],
                           "id": 683,
@@ -13796,9 +13796,9 @@
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_4a184d07b37269afc05419c3e30fc72fcfc73d01055a62dee4e00c06fa61eb4a",
-                              "typeString": "literal_string \"Pancake: TRANSFER_FAILED\""
+                              "typeString": "literal_string \"Dynasty: TRANSFER_FAILED\""
                             },
-                            "value": "Pancake: TRANSFER_FAILED"
+                            "value": "Dynasty: TRANSFER_FAILED"
                           }
                         ],
                         "expression": {
@@ -13809,7 +13809,7 @@
                             },
                             {
                               "typeIdentifier": "t_stringliteral_4a184d07b37269afc05419c3e30fc72fcfc73d01055a62dee4e00c06fa61eb4a",
-                              "typeString": "literal_string \"Pancake: TRANSFER_FAILED\""
+                              "typeString": "literal_string \"Dynasty: TRANSFER_FAILED\""
                             }
                           ],
                           "id": 745,
@@ -14602,9 +14602,9 @@
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_f0c1e1712466d3d36724e0a82edec721666e68b8fe9433d191f13e7c47aec611",
-                              "typeString": "literal_string \"Pancake: FORBIDDEN\""
+                              "typeString": "literal_string \"Dynasty: FORBIDDEN\""
                             },
-                            "value": "Pancake: FORBIDDEN"
+                            "value": "Dynasty: FORBIDDEN"
                           }
                         ],
                         "expression": {
@@ -14615,7 +14615,7 @@
                             },
                             {
                               "typeIdentifier": "t_stringliteral_f0c1e1712466d3d36724e0a82edec721666e68b8fe9433d191f13e7c47aec611",
-                              "typeString": "literal_string \"Pancake: FORBIDDEN\""
+                              "typeString": "literal_string \"Dynasty: FORBIDDEN\""
                             }
                           ],
                           "id": 818,
@@ -15075,9 +15075,9 @@
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_ecd319b2d162405bd72b657f3fdaddf991823264b7f8c130bf28f20adeb81259",
-                              "typeString": "literal_string \"Pancake: OVERFLOW\""
+                              "typeString": "literal_string \"Dynasty: OVERFLOW\""
                             },
-                            "value": "Pancake: OVERFLOW"
+                            "value": "Dynasty: OVERFLOW"
                           }
                         ],
                         "expression": {
@@ -15088,7 +15088,7 @@
                             },
                             {
                               "typeIdentifier": "t_stringliteral_ecd319b2d162405bd72b657f3fdaddf991823264b7f8c130bf28f20adeb81259",
-                              "typeString": "literal_string \"Pancake: OVERFLOW\""
+                              "typeString": "literal_string \"Dynasty: OVERFLOW\""
                             }
                           ],
                           "id": 846,
@@ -16511,14 +16511,14 @@
                                 }
                               ],
                               "id": 954,
-                              "name": "IPancakeFactory",
+                              "name": "IDynastyFactory",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 1947,
                               "src": "3627:15:3",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_IPancakeFactory_$1947_$",
-                                "typeString": "type(contract IPancakeFactory)"
+                                "typeIdentifier": "t_type$_t_contract$_IDynastyFactory_$1947_$",
+                                "typeString": "type(contract IDynastyFactory)"
                               }
                             },
                             "id": 956,
@@ -16531,8 +16531,8 @@
                             "nodeType": "FunctionCall",
                             "src": "3627:24:3",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IPancakeFactory_$1947",
-                              "typeString": "contract IPancakeFactory"
+                              "typeIdentifier": "t_contract$_IDynastyFactory_$1947",
+                              "typeString": "contract IDynastyFactory"
                             }
                           },
                           "id": 957,
@@ -18063,16 +18063,16 @@
                                 "referencedDeclaration": 2447,
                                 "src": "4646:4:3",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                  "typeString": "contract PancakePair"
+                                  "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                  "typeString": "contract DynastyPair"
                                 }
                               }
                             ],
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                  "typeString": "contract PancakePair"
+                                  "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                  "typeString": "contract DynastyPair"
                                 }
                               ],
                               "id": 1071,
@@ -18238,16 +18238,16 @@
                                 "referencedDeclaration": 2447,
                                 "src": "4711:4:3",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                  "typeString": "contract PancakePair"
+                                  "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                  "typeString": "contract DynastyPair"
                                 }
                               }
                             ],
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                  "typeString": "contract PancakePair"
+                                  "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                  "typeString": "contract DynastyPair"
                                 }
                               ],
                               "id": 1082,
@@ -19454,9 +19454,9 @@
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_ef633320352a650c1d75752f13e6c73d8d8f7f26a5596a6d026c1bf50d2f7713",
-                              "typeString": "literal_string \"Pancake: INSUFFICIENT_LIQUIDITY_MINTED\""
+                              "typeString": "literal_string \"Dynasty: INSUFFICIENT_LIQUIDITY_MINTED\""
                             },
-                            "value": "Pancake: INSUFFICIENT_LIQUIDITY_MINTED"
+                            "value": "Dynasty: INSUFFICIENT_LIQUIDITY_MINTED"
                           }
                         ],
                         "expression": {
@@ -19467,7 +19467,7 @@
                             },
                             {
                               "typeIdentifier": "t_stringliteral_ef633320352a650c1d75752f13e6c73d8d8f7f26a5596a6d026c1bf50d2f7713",
-                              "typeString": "literal_string \"Pancake: INSUFFICIENT_LIQUIDITY_MINTED\""
+                              "typeString": "literal_string \"Dynasty: INSUFFICIENT_LIQUIDITY_MINTED\""
                             }
                           ],
                           "id": 1156,
@@ -20290,16 +20290,16 @@
                                 "referencedDeclaration": 2447,
                                 "src": "6145:4:3",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                  "typeString": "contract PancakePair"
+                                  "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                  "typeString": "contract DynastyPair"
                                 }
                               }
                             ],
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                  "typeString": "contract PancakePair"
+                                  "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                  "typeString": "contract DynastyPair"
                                 }
                               ],
                               "id": 1226,
@@ -20465,16 +20465,16 @@
                                 "referencedDeclaration": 2447,
                                 "src": "6211:4:3",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                  "typeString": "contract PancakePair"
+                                  "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                  "typeString": "contract DynastyPair"
                                 }
                               }
                             ],
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                  "typeString": "contract PancakePair"
+                                  "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                  "typeString": "contract DynastyPair"
                                 }
                               ],
                               "id": 1237,
@@ -20653,16 +20653,16 @@
                               "referencedDeclaration": 2447,
                               "src": "6262:4:3",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                "typeString": "contract PancakePair"
+                                "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                "typeString": "contract DynastyPair"
                               }
                             }
                           ],
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                "typeString": "contract PancakePair"
+                                "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                "typeString": "contract DynastyPair"
                               }
                             ],
                             "id": 1245,
@@ -21254,9 +21254,9 @@
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_6c050b0a8d3f2d18d11271ee0a551b7748437b8fa9a6165c561190d34a2947d6",
-                              "typeString": "literal_string \"Pancake: INSUFFICIENT_LIQUIDITY_BURNED\""
+                              "typeString": "literal_string \"Dynasty: INSUFFICIENT_LIQUIDITY_BURNED\""
                             },
-                            "value": "Pancake: INSUFFICIENT_LIQUIDITY_BURNED"
+                            "value": "Dynasty: INSUFFICIENT_LIQUIDITY_BURNED"
                           }
                         ],
                         "expression": {
@@ -21267,7 +21267,7 @@
                             },
                             {
                               "typeIdentifier": "t_stringliteral_6c050b0a8d3f2d18d11271ee0a551b7748437b8fa9a6165c561190d34a2947d6",
-                              "typeString": "literal_string \"Pancake: INSUFFICIENT_LIQUIDITY_BURNED\""
+                              "typeString": "literal_string \"Dynasty: INSUFFICIENT_LIQUIDITY_BURNED\""
                             }
                           ],
                           "id": 1279,
@@ -21318,16 +21318,16 @@
                                 "referencedDeclaration": 2447,
                                 "src": "6764:4:3",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                  "typeString": "contract PancakePair"
+                                  "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                  "typeString": "contract DynastyPair"
                                 }
                               }
                             ],
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                  "typeString": "contract PancakePair"
+                                  "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                  "typeString": "contract DynastyPair"
                                 }
                               ],
                               "id": 1291,
@@ -21625,16 +21625,16 @@
                                   "referencedDeclaration": 2447,
                                   "src": "6926:4:3",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                    "typeString": "contract PancakePair"
+                                    "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                    "typeString": "contract DynastyPair"
                                   }
                                 }
                               ],
                               "expression": {
                                 "argumentTypes": [
                                   {
-                                    "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                    "typeString": "contract PancakePair"
+                                    "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                    "typeString": "contract DynastyPair"
                                   }
                                 ],
                                 "id": 1314,
@@ -21797,16 +21797,16 @@
                                   "referencedDeclaration": 2447,
                                   "src": "6987:4:3",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                    "typeString": "contract PancakePair"
+                                    "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                    "typeString": "contract DynastyPair"
                                   }
                                 }
                               ],
                               "expression": {
                                 "argumentTypes": [
                                   {
-                                    "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                    "typeString": "contract PancakePair"
+                                    "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                    "typeString": "contract DynastyPair"
                                   }
                                 ],
                                 "id": 1325,
@@ -22585,9 +22585,9 @@
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_c654718515b5f98052eb92744d97d32cccabf6e8b2bae886738591c9b906cfd8",
-                              "typeString": "literal_string \"Pancake: INSUFFICIENT_OUTPUT_AMOUNT\""
+                              "typeString": "literal_string \"Dynasty: INSUFFICIENT_OUTPUT_AMOUNT\""
                             },
-                            "value": "Pancake: INSUFFICIENT_OUTPUT_AMOUNT"
+                            "value": "Dynasty: INSUFFICIENT_OUTPUT_AMOUNT"
                           }
                         ],
                         "expression": {
@@ -22598,7 +22598,7 @@
                             },
                             {
                               "typeIdentifier": "t_stringliteral_c654718515b5f98052eb92744d97d32cccabf6e8b2bae886738591c9b906cfd8",
-                              "typeString": "literal_string \"Pancake: INSUFFICIENT_OUTPUT_AMOUNT\""
+                              "typeString": "literal_string \"Dynasty: INSUFFICIENT_OUTPUT_AMOUNT\""
                             }
                           ],
                           "id": 1371,
@@ -22855,9 +22855,9 @@
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_410624995b1b083dcf6f8603df497c85feb7b93fc33473e1167ca929c6d9b9e6",
-                              "typeString": "literal_string \"Pancake: INSUFFICIENT_LIQUIDITY\""
+                              "typeString": "literal_string \"Dynasty: INSUFFICIENT_LIQUIDITY\""
                             },
-                            "value": "Pancake: INSUFFICIENT_LIQUIDITY"
+                            "value": "Dynasty: INSUFFICIENT_LIQUIDITY"
                           }
                         ],
                         "expression": {
@@ -22868,7 +22868,7 @@
                             },
                             {
                               "typeIdentifier": "t_stringliteral_410624995b1b083dcf6f8603df497c85feb7b93fc33473e1167ca929c6d9b9e6",
-                              "typeString": "literal_string \"Pancake: INSUFFICIENT_LIQUIDITY\""
+                              "typeString": "literal_string \"Dynasty: INSUFFICIENT_LIQUIDITY\""
                             }
                           ],
                           "id": 1389,
@@ -23209,9 +23209,9 @@
                                 "subdenomination": null,
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_stringliteral_2d7663edc966955a2d1409fdc782de8590859b8600a8a34482f57bae932ffa4e",
-                                  "typeString": "literal_string \"Pancake: INVALID_TO\""
+                                  "typeString": "literal_string \"Dynasty: INVALID_TO\""
                                 },
-                                "value": "Pancake: INVALID_TO"
+                                "value": "Dynasty: INVALID_TO"
                               }
                             ],
                             "expression": {
@@ -23222,7 +23222,7 @@
                                 },
                                 {
                                   "typeIdentifier": "t_stringliteral_2d7663edc966955a2d1409fdc782de8590859b8600a8a34482f57bae932ffa4e",
-                                  "typeString": "literal_string \"Pancake: INVALID_TO\""
+                                  "typeString": "literal_string \"Dynasty: INVALID_TO\""
                                 }
                               ],
                               "id": 1414,
@@ -23733,14 +23733,14 @@
                                       }
                                     ],
                                     "id": 1449,
-                                    "name": "IPancakeCallee",
+                                    "name": "IDynastyCallee",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
                                     "referencedDeclaration": 1766,
                                     "src": "8173:14:3",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_type$_t_contract$_IPancakeCallee_$1766_$",
-                                      "typeString": "type(contract IPancakeCallee)"
+                                      "typeIdentifier": "t_type$_t_contract$_IDynastyCallee_$1766_$",
+                                      "typeString": "type(contract IDynastyCallee)"
                                     }
                                   },
                                   "id": 1451,
@@ -23753,8 +23753,8 @@
                                   "nodeType": "FunctionCall",
                                   "src": "8173:18:3",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_IPancakeCallee_$1766",
-                                    "typeString": "contract IPancakeCallee"
+                                    "typeIdentifier": "t_contract$_IDynastyCallee_$1766",
+                                    "typeString": "contract IDynastyCallee"
                                   }
                                 },
                                 "id": 1452,
@@ -23762,7 +23762,7 @@
                                 "isLValue": false,
                                 "isPure": false,
                                 "lValueRequested": false,
-                                "memberName": "pancakeCall",
+                                "memberName": "dynastyCall",
                                 "nodeType": "MemberAccess",
                                 "referencedDeclaration": 1765,
                                 "src": "8173:30:3",
@@ -23828,16 +23828,16 @@
                                       "referencedDeclaration": 2447,
                                       "src": "8300:4:3",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                        "typeString": "contract PancakePair"
+                                        "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                        "typeString": "contract DynastyPair"
                                       }
                                     }
                                   ],
                                   "expression": {
                                     "argumentTypes": [
                                       {
-                                        "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                        "typeString": "contract PancakePair"
+                                        "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                        "typeString": "contract DynastyPair"
                                       }
                                     ],
                                     "id": 1466,
@@ -24000,16 +24000,16 @@
                                       "referencedDeclaration": 2447,
                                       "src": "8361:4:3",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                        "typeString": "contract PancakePair"
+                                        "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                        "typeString": "contract DynastyPair"
                                       }
                                     }
                                   ],
                                   "expression": {
                                     "argumentTypes": [
                                       {
-                                        "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                        "typeString": "contract PancakePair"
+                                        "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                        "typeString": "contract DynastyPair"
                                       }
                                     ],
                                     "id": 1477,
@@ -24751,9 +24751,9 @@
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_50b0a6dd250a09c1cd083ad4bf9f97424665d60e7bc0a208a1151c7d0051999c",
-                              "typeString": "literal_string \"Pancake: INSUFFICIENT_INPUT_AMOUNT\""
+                              "typeString": "literal_string \"Dynasty: INSUFFICIENT_INPUT_AMOUNT\""
                             },
-                            "value": "Pancake: INSUFFICIENT_INPUT_AMOUNT"
+                            "value": "Dynasty: INSUFFICIENT_INPUT_AMOUNT"
                           }
                         ],
                         "expression": {
@@ -24764,7 +24764,7 @@
                             },
                             {
                               "typeIdentifier": "t_stringliteral_50b0a6dd250a09c1cd083ad4bf9f97424665d60e7bc0a208a1151c7d0051999c",
-                              "typeString": "literal_string \"Pancake: INSUFFICIENT_INPUT_AMOUNT\""
+                              "typeString": "literal_string \"Dynasty: INSUFFICIENT_INPUT_AMOUNT\""
                             }
                           ],
                           "id": 1516,
@@ -25533,9 +25533,9 @@
                                 "subdenomination": null,
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_stringliteral_36f7756737193e2c474efd71f44e92bf4269370921f82a4ea4d5e4952e46633b",
-                                  "typeString": "literal_string \"Pancake: K\""
+                                  "typeString": "literal_string \"Dynasty: K\""
                                 },
-                                "value": "Pancake: K"
+                                "value": "Dynasty: K"
                               }
                             ],
                             "expression": {
@@ -25546,7 +25546,7 @@
                                 },
                                 {
                                   "typeIdentifier": "t_stringliteral_36f7756737193e2c474efd71f44e92bf4269370921f82a4ea4d5e4952e46633b",
-                                  "typeString": "literal_string \"Pancake: K\""
+                                  "typeString": "literal_string \"Dynasty: K\""
                                 }
                               ],
                               "id": 1553,
@@ -26173,16 +26173,16 @@
                                         "referencedDeclaration": 2447,
                                         "src": "9421:4:3",
                                         "typeDescriptions": {
-                                          "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                          "typeString": "contract PancakePair"
+                                          "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                          "typeString": "contract DynastyPair"
                                         }
                                       }
                                     ],
                                     "expression": {
                                       "argumentTypes": [
                                         {
-                                          "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                          "typeString": "contract PancakePair"
+                                          "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                          "typeString": "contract DynastyPair"
                                         }
                                       ],
                                       "id": 1614,
@@ -26439,16 +26439,16 @@
                                         "referencedDeclaration": 2447,
                                         "src": "9513:4:3",
                                         "typeDescriptions": {
-                                          "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                          "typeString": "contract PancakePair"
+                                          "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                          "typeString": "contract DynastyPair"
                                         }
                                       }
                                     ],
                                     "expression": {
                                       "argumentTypes": [
                                         {
-                                          "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                          "typeString": "contract PancakePair"
+                                          "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                          "typeString": "contract DynastyPair"
                                         }
                                       ],
                                       "id": 1630,
@@ -26736,16 +26736,16 @@
                                     "referencedDeclaration": 2447,
                                     "src": "9668:4:3",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                      "typeString": "contract PancakePair"
+                                      "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                      "typeString": "contract DynastyPair"
                                     }
                                   }
                                 ],
                                 "expression": {
                                   "argumentTypes": [
                                     {
-                                      "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                      "typeString": "contract PancakePair"
+                                      "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                      "typeString": "contract DynastyPair"
                                     }
                                   ],
                                   "id": 1650,
@@ -26875,16 +26875,16 @@
                                     "referencedDeclaration": 2447,
                                     "src": "9709:4:3",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                      "typeString": "contract PancakePair"
+                                      "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                      "typeString": "contract DynastyPair"
                                     }
                                   }
                                 ],
                                 "expression": {
                                   "argumentTypes": [
                                     {
-                                      "typeIdentifier": "t_contract$_PancakePair_$1668",
-                                      "typeString": "contract PancakePair"
+                                      "typeIdentifier": "t_contract$_DynastyPair_$1668",
+                                      "typeString": "contract DynastyPair"
                                     }
                                   ],
                                   "id": 1658,
@@ -28128,11 +28128,11 @@
       },
       "id": 4
     },
-    "contracts/interfaces/IPancakeCallee.sol": {
+    "contracts/interfaces/IDynastyCallee.sol": {
       "ast": {
-        "absolutePath": "contracts/interfaces/IPancakeCallee.sol",
+        "absolutePath": "contracts/interfaces/IDynastyCallee.sol",
         "exportedSymbols": {
-          "IPancakeCallee": [
+          "IDynastyCallee": [
             1766
           ]
         },
@@ -28160,7 +28160,7 @@
             "linearizedBaseContracts": [
               1766
             ],
-            "name": "IPancakeCallee",
+            "name": "IDynastyCallee",
             "nodeType": "ContractDefinition",
             "nodes": [
               {
@@ -28170,7 +28170,7 @@
                 "implemented": false,
                 "kind": "function",
                 "modifiers": [],
-                "name": "pancakeCall",
+                "name": "dynastyCall",
                 "nodeType": "FunctionDefinition",
                 "parameters": {
                   "id": 1763,
@@ -28305,11 +28305,11 @@
       },
       "id": 5
     },
-    "contracts/interfaces/IPancakeERC20.sol": {
+    "contracts/interfaces/IDynastyERC20.sol": {
       "ast": {
-        "absolutePath": "contracts/interfaces/IPancakeERC20.sol",
+        "absolutePath": "contracts/interfaces/IDynastyERC20.sol",
         "exportedSymbols": {
-          "IPancakeERC20": [
+          "IDynastyERC20": [
             1884
           ]
         },
@@ -28337,7 +28337,7 @@
             "linearizedBaseContracts": [
               1884
             ],
-            "name": "IPancakeERC20",
+            "name": "IDynastyERC20",
             "nodeType": "ContractDefinition",
             "nodes": [
               {
@@ -29705,11 +29705,11 @@
       },
       "id": 6
     },
-    "contracts/interfaces/IPancakeFactory.sol": {
+    "contracts/interfaces/IDynastyFactory.sol": {
       "ast": {
-        "absolutePath": "contracts/interfaces/IPancakeFactory.sol",
+        "absolutePath": "contracts/interfaces/IDynastyFactory.sol",
         "exportedSymbols": {
-          "IPancakeFactory": [
+          "IDynastyFactory": [
             1947
           ]
         },
@@ -29737,7 +29737,7 @@
             "linearizedBaseContracts": [
               1947
             ],
-            "name": "IPancakeFactory",
+            "name": "IDynastyFactory",
             "nodeType": "ContractDefinition",
             "nodes": [
               {
@@ -30451,11 +30451,11 @@
       },
       "id": 7
     },
-    "contracts/interfaces/IPancakePair.sol": {
+    "contracts/interfaces/IDynastyPair.sol": {
       "ast": {
-        "absolutePath": "contracts/interfaces/IPancakePair.sol",
+        "absolutePath": "contracts/interfaces/IDynastyPair.sol",
         "exportedSymbols": {
-          "IPancakePair": [
+          "IDynastyPair": [
             2189
           ]
         },
@@ -30483,7 +30483,7 @@
             "linearizedBaseContracts": [
               2189
             ],
-            "name": "IPancakePair",
+            "name": "IDynastyPair",
             "nodeType": "ContractDefinition",
             "nodes": [
               {
@@ -35896,8 +35896,8 @@
             "src": "0:24:12"
           },
           {
-            "absolutePath": "contracts/PancakeERC20.sol",
-            "file": "../PancakeERC20.sol",
+            "absolutePath": "contracts/DynastyERC20.sol",
+            "file": "../DynastyERC20.sol",
             "id": 2385,
             "nodeType": "ImportDirective",
             "scope": 2401,
@@ -35913,13 +35913,13 @@
                 "baseName": {
                   "contractScope": null,
                   "id": 2386,
-                  "name": "PancakeERC20",
+                  "name": "DynastyERC20",
                   "nodeType": "UserDefinedTypeName",
                   "referencedDeclaration": 627,
                   "src": "75:12:12",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_PancakeERC20_$627",
-                    "typeString": "contract PancakeERC20"
+                    "typeIdentifier": "t_contract$_DynastyERC20_$627",
+                    "typeString": "contract DynastyERC20"
                   }
                 },
                 "id": 2387,

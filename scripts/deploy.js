@@ -18,8 +18,8 @@ function save(chainId, name, value) {
 }
 
 async function adjustPerifpherySourceCode(address) {
-  const PATH_GET = '../astro-swap-periphery/contracts/libraries/PancakeLibraryTemplate.sol'
-  const PATH_PUT = '../astro-swap-periphery/contracts/libraries/PancakeLibrary.sol'
+  const PATH_GET = '../dynasty-swap-periphery/contracts/libraries/DynastyLibraryTemplate.sol'
+  const PATH_PUT = '../dynasty-swap-periphery/contracts/libraries/DynastyLibrary.sol'
 
   const contract = await ethers.getContractAt('DynastyFactory', address)
 
@@ -40,7 +40,7 @@ async function adjustPerifpherySourceCode(address) {
 
   const { chainId } = await ethers.provider.getNetwork()
 
-  save(chainId, 'PancakeFactory_Init_Code_Hash', INIT_CODE_PAIR_HASH)
+  save(chainId, 'DynastyFactory_Init_Code_Hash', INIT_CODE_PAIR_HASH)
 
   await sleep()
   return true

@@ -37,7 +37,7 @@ async function createRealPool(address) {
   const result = await PoolAddress.wait(1)
   const event = result.events.find(x => x.event == 'PairCreated')
 
-  const Token = await ethers.getContractAt('PancakeERC20', address)
+  const Token = await ethers.getContractAt('DynastyERC20', address)
 
   const symbol = await Token.symbol()
 
