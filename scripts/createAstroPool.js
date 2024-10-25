@@ -8,7 +8,7 @@ async function sleep() {
 function save(chainId, name, value) {
   const fs = require('fs')
 
-  const filename = '../dynasty-addresses/' + chainId + '.json'
+  const filename = '../dinasty-addresses/' + chainId + '.json'
 
   const data = fs.existsSync(filename) ? JSON.parse(fs.readFileSync(filename, 'utf8')) : {}
 
@@ -37,7 +37,7 @@ async function createRealPool(address) {
   const result = await PoolAddress.wait(1)
   const event = result.events.find(x => x.event == 'PairCreated')
 
-  const Token = await ethers.getContractAt('DynastyERC20', address)
+  const Token = await ethers.getContractAt('PancakeERC20', address)
 
   const symbol = await Token.symbol()
 
@@ -51,7 +51,7 @@ async function createRealPool(address) {
 function get(chainId) {
   const fs = require('fs')
 
-  const filename = '../dynasty-addresses/' + chainId + '.json'
+  const filename = '../dinasty-addresses/' + chainId + '.json'
 
   const data = fs.existsSync(filename) ? JSON.parse(fs.readFileSync(filename, 'utf8')) : {}
 
@@ -63,7 +63,7 @@ async function main() {
 
   const data = get(chainId)
 
-  await createRealPool(data.DynastyToken)
+  await createRealPool(data.AstroToken)
 }
 
 main()

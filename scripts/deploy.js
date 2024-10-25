@@ -8,7 +8,7 @@ async function sleep() {
 function save(chainId, name, value) {
   const fs = require('fs')
 
-  const filename = '../dynasty-addresses/' + chainId + '.json'
+  const filename = '../dinasty-addresses/' + chainId + '.json'
 
   const data = fs.existsSync(filename) ? JSON.parse(fs.readFileSync(filename, 'utf8')) : {}
 
@@ -18,8 +18,8 @@ function save(chainId, name, value) {
 }
 
 async function adjustPerifpherySourceCode(address) {
-  const PATH_GET = '../dynasty-swap-periphery/contracts/libraries/DynastyLibraryTemplate.sol'
-  const PATH_PUT = '../dynasty-swap-periphery/contracts/libraries/DynastyLibrary.sol'
+  const PATH_GET = '../dinasty-swap-periphery/contracts/libraries/PancakeLibraryTemplate.sol'
+  const PATH_PUT = '../dinasty-swap-periphery/contracts/libraries/PancakeLibrary.sol'
 
   const contract = await ethers.getContractAt('DynastyFactory', address)
 
@@ -40,7 +40,7 @@ async function adjustPerifpherySourceCode(address) {
 
   const { chainId } = await ethers.provider.getNetwork()
 
-  save(chainId, 'DynastyFactory_Init_Code_Hash', INIT_CODE_PAIR_HASH)
+  save(chainId, 'PancakeFactory_Init_Code_Hash', INIT_CODE_PAIR_HASH)
 
   await sleep()
   return true
@@ -64,7 +64,7 @@ async function deploy(name, args = []) {
 async function main() {
   // We get the contract to deploy
 
-  const admins = JSON.parse(require('fs').readFileSync('../dynasty-addresses/admins.json', 'utf8'))
+  const admins = JSON.parse(require('fs').readFileSync('../dinasty-addresses/admins.json', 'utf8'))
 
   DynastyFactory = await deploy('DynastyFactory', [admins._devaddr])
 

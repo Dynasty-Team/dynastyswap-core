@@ -8,7 +8,7 @@ async function sleep() {
 function save(chainId, name, value) {
   const fs = require('fs')
 
-  const filename = '../dynasty-addresses/' + chainId + '.json'
+  const filename = '../dinasty-addresses/' + chainId + '.json'
 
   const data = fs.existsSync(filename) ? JSON.parse(fs.readFileSync(filename, 'utf8')) : {}
 
@@ -43,7 +43,7 @@ async function createTestPool(name) {
 function get(chainId) {
   const fs = require('fs')
 
-  const filename = '../dynasty-addresses/' + chainId + '.json'
+  const filename = '../dinasty-addresses/' + chainId + '.json'
 
   const data = fs.existsSync(filename) ? JSON.parse(fs.readFileSync(filename, 'utf8')) : {}
 
@@ -51,7 +51,7 @@ function get(chainId) {
 }
 
 async function main() {
-  const admins = JSON.parse(require('fs').readFileSync('../dynasty-addresses/admins.json', 'utf8'))
+  const admins = JSON.parse(require('fs').readFileSync('../dinasty-addresses/admins.json', 'utf8'))
 
   const { chainId } = await ethers.provider.getNetwork()
 
